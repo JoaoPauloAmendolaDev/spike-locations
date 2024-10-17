@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USER}
+    password: ${DATABASE_PASSWORD}
+  sql:
+    init:
+      platform: postgres
+  jpa:
+    database: POSTGRESQL
+    show-sql: false
+    properties.hibernate.jdbc.time_zone: UTC
+
